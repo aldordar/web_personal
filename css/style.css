@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
   box-sizing: border-box; /*El borde se ajusta al tamaño*/
 }
 
@@ -11,7 +10,9 @@ body {
 }
 
 #container {
+  padding: 5px;
   width: 100%;
+  height: 100%;
 }
 
 header {
@@ -76,26 +77,16 @@ nav ul a:hover {
 }
 
 /*CONTENIDO*/
-
 #content {
-  position: absolute;
+  display: flex;
   margin: 40px 60px 40px 60px;
 }
 
 section {
-  display: block;
-  float:left;
   width: 67%;
   box-sizing: border-box; /*Si pongo un padding lo aplica dentro, no cambia las dimensiones*/
 }
 
-section p {
-  text-align: justify;
-  padding: 30px 8% 5% 0;
-  font-size: 20px;
-  letter-spacing: 0.5px;
-  line-height: 1.3;
-}
 
 .name {
   text-transform: uppercase;
@@ -126,21 +117,46 @@ section p {
   }
 }
 
-section .valores h1 {
+section p {
+  text-align: justify;
+  padding: 30px 8% 5% 0;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+}
+
+section #valores {
+  margin: 20px 8% 5% 0;
+}
+
+section #valores h1 {
+  padding: 20px 0px;
   font-size: 35px;
   letter-spacing: 2px;
 }
 
-section .valores i {
+section .values {
+  padding: 10px;
+  margin: 10px 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+section .values:hover {
+  color: #5c7ae3;
+}
+
+section .values p {
+  text-align: center;
   text-decoration: none;
-  font-size: 20px;
-  padding: 20px 30px 20px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 /*PARTE DERECHA DE LA WEB*/
 
 aside {
-  float: right;
   padding-left: 10px;
   /*text-align: center;*/
   width: 33%;
@@ -254,29 +270,44 @@ aside img {
 /*Cuando el tamaño de pantalla es screen y el ancho maximo es 600px*/
 @media screen and (max-width: 600px) {
 
+  #content {
+    display: inline-block;
+  }
   section {
     width: 100%;
     box-sizing: border-box;
   }
-
   aside {
     /*text-align: center;*/
     margin: 30px 0px;
     width: 100%;
     box-sizing: border-box;
   }
-
   aside img {
     float: left;
     margin: 0px 15px 0px 0px;
     width: 25%;
     height: auto;
   }
-
   .skills {
     float: right;
     padding: 0 40px 0 0;
     width: 70%;
   }
+}
 
+footer {
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 0px 30px;
+  width: 100%;
+  height: 50px;
+  background-color: #738bde;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
 }
