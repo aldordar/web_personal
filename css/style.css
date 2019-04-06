@@ -75,45 +75,103 @@ nav ul a:hover {
   border-bottom: 3px solid #f6f9f7;
 }
 
+/*CONTENIDO*/
+
 #content {
   position: absolute;
-  margin: 20px 30px 20px 30px;
-  border: 5px solid black;
+  margin: 40px 60px 40px 60px;
 }
 
 section {
+  display: block;
   float:left;
   width: 67%;
-  background-color: #255947;
   box-sizing: border-box; /*Si pongo un padding lo aplica dentro, no cambia las dimensiones*/
 }
 
-.name {
-  padding: 20px;
+section p {
+  text-align: justify;
+  padding: 30px 8% 5% 0;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
 }
 
+.name {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  padding: 20px 20px 30px 0px;
+  animation: text 2s 1;
+}
 
+.profession {
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  padding: 0px 20px 20px 0px;
+}
+
+@keyframes text {
+  0% {
+    color: #d9eaf2; /*Añadir opacidad al fondo*/
+    margin-bottom: -90px;
+  }
+  25% {
+    color: #d9eaf2;
+    letter-spacing: 1px;
+  }
+  85% {
+    letter-spacing: 8px;
+  }
+}
+
+section .valores h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+section .valores i {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 30px 20px 0px;
+}
+
+/*PARTE DERECHA DE LA WEB*/
 
 aside {
   float: right;
+  padding-left: 10px;
   /*text-align: center;*/
   width: 33%;
-  background-color: #3dc15e;
   box-sizing: border-box;
 }
 
 aside img {
-  margin: 20px;
+  margin: 0 15% 10% 15%;
   width: 68%;
   height: auto;
 }
 
-.barprogress {
-  padding: 10px;
+
+.skills {
+  color: black;
+  padding: 20px 10px 20px 10px;
   width: 100%;
-  border: 2px solid green;
 }
 
+.skills h2 {
+  letter-spacing: 2px;
+  padding: 0px 0px 5px 0px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.skills h3 {
+  padding-top: 20px;
+}
+
+/*BARRA DE HABILIDADES*/
 .bar {
   /*margin*/
   background-color: #ede3f0;
@@ -125,7 +183,71 @@ aside img {
   box-shadow: 0 0 10px white;
 }
 
-.valores {
+/*BARRA DE PROGRESO*/
+.bar span {
+  float: left;
+  height: 6px;
+  background-color: #7a78e7;
+}
+
+.html {
+  width: 80%;
+  animation: html 4s;
+}
+
+@keyframes html {
+  0% { width: 0%; }
+  100% { width: 80%; }
+}
+
+.css {
+  width: 85%;
+  animation: css 4s;
+}
+
+@keyframes css {
+  0% { width: 0%; }
+  100% { width: 85%; }
+}
+
+.javas {
+  width: 95%;
+  animation: javas 4s;
+}
+
+@keyframes javas {
+  0% { width: 0%; }
+  100% { width: 95%; }
+}
+
+.php {
+  width: 75%;
+  animation: php 4s;
+}
+
+@keyframes php {
+  0% { width: 0%; }
+  100% { width: 75%; }
+}
+
+.sql {
+  width: 79%;
+  animation: sql 4s;
+}
+
+@keyframes sql {
+  0% { width: 0%; }
+  100% { width: 79%; }
+}
+
+.cpp {
+  width: 75%;
+  animation: cpp 4s;
+}
+
+@keyframes cpp {
+  0% { width: 0%; }
+  100% { width: 75%; }
 }
 
 /*PARA QUE CONTENT SEA RESPONSIVO*/
@@ -134,29 +256,27 @@ aside img {
 
   section {
     width: 100%;
-    background-color: #255947;
     box-sizing: border-box;
   }
 
   aside {
-    overflow: hidden;
     /*text-align: center;*/
+    margin: 30px 0px;
     width: 100%;
-    background-color: #3dc15e;
     box-sizing: border-box;
   }
 
   aside img {
     float: left;
-    margin: 10px;
+    margin: 0px 15px 0px 0px;
     width: 25%;
     height: auto;
   }
 
-  .barprogress {
+  .skills {
     float: right;
+    padding: 0 40px 0 0;
     width: 70%;
-    background-color: white;
   }
 
 }
