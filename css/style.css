@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
   box-sizing: border-box; /*El borde se ajusta al tamaño*/
 }
 
@@ -84,7 +85,7 @@ section {
   float:left;
   width: 67%;
   background-color: #255947;
-  box-sizing: border-box; /*Si pongo un padding lo aplica dentro*/
+  box-sizing: border-box; /*Si pongo un padding lo aplica dentro, no cambia las dimensiones*/
 }
 
 .name {
@@ -102,6 +103,60 @@ aside {
 }
 
 aside img {
+  margin: 20px;
   width: 68%;
   height: auto;
+}
+
+.barprogress {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid green;
+}
+
+.bar {
+  /*margin*/
+  background-color: #ede3f0;
+  display: block;
+  height: 7px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px white;
+}
+
+.valores {
+}
+
+/*PARA QUE CONTENT SEA RESPONSIVO*/
+/*Cuando el tamaño de pantalla es screen y el ancho maximo es 600px*/
+@media screen and (max-width: 600px) {
+
+  section {
+    width: 100%;
+    background-color: #255947;
+    box-sizing: border-box;
+  }
+
+  aside {
+    overflow: hidden;
+    /*text-align: center;*/
+    width: 100%;
+    background-color: #3dc15e;
+    box-sizing: border-box;
+  }
+
+  aside img {
+    float: left;
+    margin: 10px;
+    width: 25%;
+    height: auto;
+  }
+
+  .barprogress {
+    float: right;
+    width: 70%;
+    background-color: white;
+  }
+
 }
