@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*El borde se ajusta al tamaño*/
+}
+
+body {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+  font-family: Montserrat;
+}
+
+#container {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  padding: 0px 30px 0px 20px;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #fff;
+}
+
+#home {
+  float: left;
+  display: inline-block;
+}
+
+#home a{
+  color:#f6f9f7;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#home div  {
+  padding: 23px 17px 23px 16px;
+  font-size: 18px;
+}
+
+#home div:hover {
+  background-color: #1e1399;
+  border-bottom: 3px solid #f6f9f7;
+}
+
+nav ul{
+  float: right; /*Alinear los elementos a la derecha*/
+}
+
+/*nav ul a*/
+.menu-option  {
+  padding: 25.5px 12px;
+  float:left;/*Para que queden en el orden en el que fueron escritos*/
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav ul a li {
+  color:#f6f9f7;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+
+nav ul a:hover {
+  background-color: #1e1399;
+  border-bottom: 3px solid #f6f9f7;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 5% 40px 5%;
+}
+
+section h1 {
+  max-width: 100px;
+  padding-left: 40px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.borde {
+  margin-top: 10px;
+  width: 170px;
+  height: 2px;
+  background-color: #6fcbb2;
+}
+
+.search-box {
+  background-color: #ffffff28;
+  border: 1px solid #fff;
+  height: 80px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn {
+  color: #fff;
+  float: right;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.search-btn i {
+  font-size: 30px;
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 18px;
+  transition: 0.4s;
+  width: 0px;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+
+.search-box:hover > .search-text {
+  width: 160px;
+  padding: 0 20px;
+}
+
+.search-box:hover > .search-btn {
+  background-color: #6fcbb2;
+  border: 1px solid #fff;
+}
+
+#content {
+  display: flex;
+  margin: 45px 60px 30px 60px;
+}
+
+img {
+  width: 100%;
+}
+
+.portfolio-item {
+  border-radius: 22px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0px 10px;
+}
+
+.portfolio-img {
+  transition: all 0.5s;
+}
+
+.portfolio-text {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  /*Es un color negro con una trasparencia del 40%*/
+  transform: translateY(100%);
+  /*Se mueve un 100% de su tamaño sobre el eje de las Y*/
+  transition: all 0.5s ease-out;
+}
+
+.portfolio-text p {
+  text-align: justify;
+}
+
+.portfolio-item:hover {
+  border: 2px solid #6fcbb2;
+  box-shadow: 0 0 5px #fff;
+}
+.portfolio-item:hover .portfolio-text {
+  transform: translateY(0%);
+}
+
+.portfolio-item:hover .portfolio-img {
+  transform: scale(1.05);
+}
+
+footer {
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: absolute;
+  float:right;
+  display: inline-flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+  height: 50px;
+}
+
+footer a, footer p {
+  padding: 0px 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #2521dd;
+}
+
+@media screen and (max-width: 1000px) {
+  #content {
+    display: inline-block;
+  }
+  .portfolio-item {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0px;
+  }
+  footer {
+    position: relative;
+  }
+}

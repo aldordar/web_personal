@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Alberto Dorta Darias</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Alberto Dorta Darias">
+  <meta name="description" content="Sitio Web Personal de Alberto Dorta Darias">
+  <meta name="keywords" content="Web, Web Developer, Web Programmer, Alberto Dorta Darias">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para el diseño responsivo-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+  <link rel="icon" href="../img/terminal.png">
+</head>
+
+<body>
+<div id="container">
+  <header>
+    <nav>
+      <div id="home">
+        <a href="lp.html">
+          <div>
+          <i class="fas fa-home"></i> Home
+          </div>
+        </a>
+      </div>
+      <ul>
+        <!--Poniendo el li dentro del enlace nos aseguramos de que
+        toda la caja sea un enlace, y no solo el texto-->
+        <a href="portfolio.html" class="menu-option"><li>Porfolio</li></a>
+        <a href="work.html" class="menu-option"><li>Work</li></a>
+        <a href="contact.html" class="menu-option"><li>Contact</li></a>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="portfolio">
+    <h1>Trabajos Previos<div class="borde"></div></h1>
+    <div class="search-box">
+      <input class="search-text" type="text" name="buscador" placeholder="Search">
+      <a class="search-btn" href="#">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    </section>
+
+<div id="content">
+    <a href="https://github.com/aldordar/cars.git" class="portfolio-item">
+      <img class="portfolio-img" src="../img/car.jpeg" alt="">
+      <div class="portfolio-text">
+        <h2>Coches Autónomos</h2>
+        <p>Software en C++ para un vehículo autónomo.
+        Llega al destino seleccionado evitando obstáculos.</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/aldordar/talk.git" class="portfolio-item">
+      <img class="portfolio-img" src="../img/chat.jpg" alt="">
+      <div class="portfolio-text">
+        <h2>Prototipo Talk</h2>
+        <p>Chat multiusuario desarrollado en C++ con opcion de ejecución de
+          comandos, historial y nombres de usuario en la interfaz.</p>
+      </div>
+    </a>
+
+    <a href="https://rubygems.org/gems/nutritag" class="portfolio-item">
+      <img class="portfolio-img" src="../img/rubygem.png" alt="">
+      <div class="portfolio-text">
+        <h2>Nutritag</h2>
+        <p>Gema de Ruby para estudar la composición nutricional de un individuo.</p>
+      </div>
+    </a>
+</div>
+
+<footer>
+  <a href="#">Política de Privacidad y Cookies</a>
+  <a href="#">Términos y condiciones de uso</a>
+  <p>Copyright - Alberto Dorta Darias</p>
+</footer>
+</div>
+</body>
+</html>

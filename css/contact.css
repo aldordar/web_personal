@@ -227,7 +227,7 @@ iframe {
   font-size: 50px;
   line-height: 100px;
   z-index: 1;
-  transition: transform 0.6s;
+  transition: transform 0.4s;
 }
 
 .contact-method span {
