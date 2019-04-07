@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Alberto Dorta Darias</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Alberto Dorta Darias">
+  <meta name="description" content="Sitio Web Personal de Alberto Dorta Darias">
+  <meta name="keywords" content="Web, Web Developer, Web Programmer, Alberto Dorta Darias">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para el diseño responsivo-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/work.css">
+  <link rel="icon" href="../img/terminal.png">
+</head>
+
+<body>
+<div id="container">
+  <header>
+    <nav>
+      <div id="home">
+        <a href="lp.html">
+          <div>
+          <i class="fas fa-home"></i> Home
+          </div>
+        </a>
+      </div>
+      <ul>
+        <!--Poniendo el li dentro del enlace nos aseguramos de que
+        toda la caja sea un enlace, y no solo el texto-->
+        <a href="#" class="menu-option"><li>Porfolio</li></a>
+        <a href="#" class="menu-option"><li>Work</li></a>
+        <a href="#" class="menu-option"><li>Contact</li></a>
+      </ul>
+    </nav>
+  </header>
+
+<div id="content">
+  <div class="alineador">
+    <h1 class="title">Servicios</h1>
+    <div class="borde"></div>
+    <div class="services-container">
+      <div class="service-box">
+        <div class="icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <div class="service-title">Diseño Web</div>
+      </div>
+
+      <div class="service-box">
+        <div class="icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="service-title">Desarrollo</div>
+      </div>
+
+      <div class="service-box">
+        <div class="icon">
+          <i class="fas fa-brush"></i>
+        </div>
+        <div class="service-title">Responsive</div>
+      </div>
+
+      <div class="service-box">
+        <div class="icon">
+          <i class="fas fa-object-ungroup"></i>
+        </div>
+        <div class="service-title">Edición</div>
+      </div>
+
+      <div class="service-box">
+        <div class="icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <div class="service-title">Bases de Datos</div>
+      </div>
+
+      <div class="service-box">
+        <div class="icon">
+          <i class="fab fa-android"></i>
+        </div>
+        <div class="service-title">Aplicaciones</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="formulario">
+    <h2>Hablemos de trabajo</h2>
+    <form action="respuesta.html" method="post">
+      <h3>Introduzca sus datos</h3>
+      <input class="in" type="text" name="nombre" placeholder="Nombre">
+      <input class="in" type="email" name="email" placeholder="Email">
+      <input class="in" type="tel" name="phone" placeholder="Teléfono">
+      <label class="in" for="casilla">
+        <input class="check" class="in" type="checkbox" name="casilla" value="activar" required>
+        Acepta la Política de Privacidad
+      </label>
+      <textarea class="in" name="textarea" rows="6" cols="80" placeholder="¿Cuál es tu proyecto?"></textarea>
+      <input  class="but" type="reset" name="borrar">
+      <input  class="but" type="submit" name="boton" value="Enviar">
+    </form>
+  </div>
+</div>
+
+<footer>
+  <a href="#">Política de Privacidad y Cookies</a>
+  <a href="#">Términos y condiciones de uso</a>
+  <p>Copyright - Alberto Dorta Darias</p>
+</footer>
+</div>
+</body>
+</html>

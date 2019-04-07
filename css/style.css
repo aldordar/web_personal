@@ -171,6 +171,7 @@ aside {
 }
 
 aside img {
+  border-radius: 20px;
   margin: 0 15% 10% 15%;
   width: 68%;
   height: auto;
@@ -199,17 +200,16 @@ aside img {
   /*margin*/
   background-color: #ede3f0;
   display: block;
-  height: 7px;
+  height: 10px;
   border: 1px solid black;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 0 10px white;
 }
 
 /*BARRA DE PROGRESO*/
 .bar span {
   float: left;
-  height: 6px;
+  height: 8px;
   background-color: #7a78e7;
 }
 
@@ -305,7 +305,7 @@ aside img {
   aside img {
     float: left;
     margin: 30px 20px 0px 0px;
-    width: 25%;
+    width: 35%;
     height: auto;
   }
   .skills {
