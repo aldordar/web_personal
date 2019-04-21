@@ -4,49 +4,90 @@
 <head>
   <title>Alberto Dorta Darias</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Alberto Dorta Darias">
   <meta name="description" content="Sitio Web Personal de Alberto Dorta Darias">
   <meta name="keywords" content="Web, Web Developer, Web Programmer, Alberto Dorta Darias">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para el diseño responsivo-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/lp.css">
   <link rel="icon" href="../img/terminal.png">
 </head>
 
 <body>
-
 <div id="container">
- <header>
-  <nav>
-    <div id="home">
-      <a href="#">
-        <div>
-        <i class="fas fa-home"></i> Home
-        </div>
-      </a>
+  <header>
+    <nav>
+      <div id="home">
+        <a href="index.html">
+          <div>
+          <i class="fas fa-home"></i> Home
+          </div>
+        </a>
+      </div>
+      <ul>
+        <!--Poniendo el li dentro del enlace nos aseguramos de que
+        toda la caja sea un enlace, y no solo el texto-->
+        <a href="portfolio.html" id="portfolio" class="menu-option"><li>Porfolio</li></a>
+        <a href="work.html" id="work" class="menu-option"><li>Work</li></a>
+        <a href="contact.html" id="contact" class="menu-option"><li>Contact</li></a>
+      </ul>
+    </nav>
+  </header>
+
+<div id="content">
+
+  <section>
+    <div class="name">Alberto Dorta</div>
+    <div class="profession">Ingeniero Infomático y Desarrollador Web</div>
+    <p>¡Hola! Me llamo Alberto Dorta Darias y soy <strong>Ingeniero Informático y Desarrollador Web</strong>.
+      Tengo intereses específicos centrados en las Tecnologías de la Información. <br><br>Me he lanzado
+      en una aventura como <strong>freelance</strong> con el objetivo de incrementar mis capacidades
+      con proyectos que realmente me motiven y despierten mi pasión por la informática
+    </p>
+
+    <div id="valores">
+      <h1>VALORES</h1>
+      <div class="values"><i class="far fa-clock fa-2x"><p>Puntualidad</p></i></div>
+      <div class="values"><i class="fas fa-check fa-2x"><p>Compromiso</p></i></div>
+      <div class="values"><i class="fas fa-balance-scale fa-2x"><p>Sinceridad</p></i></div>
+      <div class="values"><i class="fas fa-running fa-2x"><p>Sacrificio</p></i></div>
+      <div class="values"><i class="fas fa-laptop-code fa-2x"><p>Eficiencia</p></i></div>
+      <div class="values"><i class="far fa-copyright fa-2x"><p>Exclusividad</p></i></div>
+      <div class="values"><i class="far fa-lightbulb fa-2x"><p>Innovación</p></i></div>
+      <div class="values"><i class="far fa-handshake fa-2x"><p>Flexibilidad</p></i></div>
+      <div class="values"><i class="fas fa-chalkboard-teacher fa-2x"><p>Disponibilidad</p></i></div>
+      <div class="values"><i class="fas fa-bolt fa-2x"><p>Eficacia</p></i></div>
     </div>
-    <ul>
-      <!--Poniendo el li dentro del enlace nos aseguramos de que
-      toda la caja sea un enlace, y no solo el texto-->
-      <a href="portfolio.html" class="menu-option"><li>Porfolio</li></a>
-      <a href="work.html" class="menu-option"><li>Work</li></a>
-      <a href="contact.html" class="menu-option"><li>Contact</li></a>
-    </ul>
-  </nav>
- </header>
+  </section>
 
- <article>
-   <h1>Alberto Dorta Darias</h1>
-   <h3>Ingeniero Informático y Desarrolador Web</h3>
-   <a href="index.html"><button type="button">Detalles</button></a>
- </article>
+  <aside>
+    <img src="../img/id.jpeg" alt="Alberto Dorta">
 
- <footer>
-   <a href="#">Política de Privacidad y Cookies</a>
-   <a href="#">Términos y condiciones de uso</a>
-   <p>Copyright - Alberto Dorta Darias</p>
- </footer>
+    <div class="skills">
+      <h2>Skills</h2>
+      <h3>HTML5</h3>
+      <span class="bar"><span class="html"></span></span>
+      <h3>CSS3</h3>
+      <span class="bar"><span class="css"></span></span>
+      <h3>JavaScript</h3>
+      <span class="bar"><span class="javas"></span></span>
+      <h3>PHP</h3>
+      <span class="bar"><span class="php"></span></span>
+      <h3>MySQL</h3>
+      <span class="bar"><span class="sql"></span></span>
+      <h3>C++</h3>
+      <span class="bar"><span class="cpp"></span></span>
+    </div>
+
+  </aside>
 </div>
 
+<footer>
+  <a href="#">Política de Privacidad y Cookies</a>
+  <a href="#">Términos y condiciones de uso</a>
+  <p>Copyright - Alberto Dorta Darias</p>
+</footer>
+</div>
 </body>
 </html>
